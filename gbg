@@ -455,7 +455,7 @@ local Script = {Functions = {}}
     if Script.Functions.getEquippedWeaponName() ~= nil then
         local WeaponSettings = getgenv().Aiming.GunFOV[Script.Functions.getEquippedWeaponName()]
         if WeaponSettings ~= nil and getgenv().Aiming.Enabled == true then
-            getgenv().Aiming.FOV * 3 = WeaponSettings.FOV
+            getgenv().Aiming.FOV = WeaponSettings.FOV
         else
             getgenv().Aiming.FOV = getgenv().Aiming.FOV
         end
