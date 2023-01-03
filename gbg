@@ -434,21 +434,6 @@ Heartbeat:Connect(function()
     Aiming.GetClosestPlayerToCursor()
 end)
 
-GunFOV = {
-        ["Enabled"] = (true), -- // Gun Fov / Fov Is Automatically Changed To Specific Gun Equipped
-        
-        ["Double-Barrel SG"] = {["FOV"] = 13}, -- // DB
-        ["Revolver"] = {["FOV"] = 8.5}, -- // Rev
-        ["SMG"] = {["FOV"] = 23}, -- // smg
-        ["Shotgun"] = {["FOV"] = 20}, -- // Shotgun
-        ["Rifle"] = {["FOV"] = 20}, -- // Rifle
-        ["TacticalShotgun"] = {["FOV"] = 17}, -- // Rev
-        ["Silencer"] = {["FOV"] = 17}, -- // Smg
-        ["AK47"] = {["FOV"] = 10}, -- // Shotgun
-        ["AR"] = {["FOV"] = 10} -- // Rifle
-        -- // You Can Add Custom Weapons If You Want To :p
-    }
-
 local Script = {Functions = {}}
     Script.Functions.getToolName = function(name)
         local split = string.split(string.split(name, "[")[2], "]")[1]
